@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconmarker.png">
+    <!-- Tailwind CSS CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css">
+    <script src="https://kit.fontawesome.com/b3dda4dea6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>DEPONAMI</title>
+</head>
+<header class="sticky top-0 z-10 bg-blue-900">
+    <nav class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" aria-label="Top">
+        <div class="flex flex-col items-center justify-between w-full py-2 border-b border-indigo-500 lg:border-none">
+            <div class="flex flex-col items-center md:flex-row">
+                <a href="#" class="bg-white border rounded-full">
+                    <span class="sr-only">Content</span>
+                    <img class="w-auto h-10" src="iconmarker.png" alt="" class="">
+                </a>
+                <div class="hidden ml-10 space-x-4 md:active lg:block">
+                    <a href="#map" class="text-base font-medium text-white hover:text-indigo-50" key="Maps">Maps</a>
+                    <a href="#pengertian" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Tentang">Pengertian</a>
+                    <a href="#jenis" class="text-base font-medium text-white hover:text-indigo-50" key="Docs">Jenis</a>
+                    <a href="#letak" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Company">Letak</a>
+                    <a href="#proses" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Maps">Proses</a>
+                    <a href="#gelombang" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Tentang">Gelombang</a>
+                    <a href="#bahaya" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Docs">Bahaya</a>
+                    <a href="#minimalisir" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Company">Minimalisir</a>
+                    <a href="#lembaga" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Company">Lembaga</a>
+                    <a href="#referensi" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Company">Referensi</a>
+                    <a href="#anggota" class="text-base font-medium text-white hover:text-indigo-50"
+                        key="Company">Anggota</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="w-full">
+    <div class="container py-8 mx-auto my-4 border-y-2">
+        <h1>
+            <span
+                class="block mt-2 text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl">
+                Peta
+                Tsunami
+            </span>
+        </h1>
+        <div id="map" class="my-8 mb-8 shadow-xl"></div>
+    </div>
+</section>
+<section class="w-full bg-gray-100">
+    <div class="relative py-16 overflow-hidden bg-white">
+        <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+            <div class="relative h-full mx-auto text-lg max-w-prose" aria-hidden="true">
+                <svg class="absolute transform translate-x-32 top-12 left-full" width="404" height="384" fill="none"
+                    viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+                </svg>
+                <svg class="absolute transform -translate-x-32 -translate-y-1/2 top-1/2 right-full" width="404"
+                    height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+                </svg>
+                <svg class="absolute transform translate-x-32 bottom-12 left-full" width="404" height="384" fill="none"
+                    viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                </svg>
+            </div>
+        </div>
+        <div class="relative px-4 sm:px-6 lg:px-8">
+            <div id="pengertian" class="container py-12 mx-auto text-lg border-t-2 max-w-prose">
+                <h1>
+                    <span class="block text-base font-semibold tracking-wide text-center text-gray-600 uppercase">
+                        Apa
+                        itu Tsunami?
+                    </span>
+                    <span
+                        class="block mt-2 text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl">
+                        Pengertian
+                        Tsunami
+                    </span>
+                </h1>
+                <p class="mt-8 text-xl leading-8 text-gray-500">
+                    <strong>Tsunami berasal dari Bahasa jepang</strong>
+                    ,
+                    <br>
+                    Tsu = Laut
+                    <br>
+                    Nami = Gelombang ombak
+                </p>
+                <p class="mt-8 text-xl leading-8 text-gray-500">
+                    <strong>Menurut BNPB (2017)</strong>
+                    ,
+                    <br>
+                    "Tsunami adalah serangkaian gelombang ombak laut raksasa yang timbul karena adanya pergeseran di
+                    dasar laut akibat gempabumi"
+                </p>
+            </div>
+            <div id="jenis" class="container py-12 mx-auto my-12 text-gray-500 border-t-2">
+                <h2 class="text-3xl font-bold text-center text-black">Jenis Tsunami</h2>
+                <div
+                    class="mt-4 space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Jarak Dekat</h2>
+                        </div>
+                        <div class="px-6 pt-6 pb-8">
+                            <h3 class="text-xs font-medium tracking-wide text-gray-900 uppercase">Ciri-cirinya</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li class="flex space-x-3">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-sm text-gray-500">Sekitar 1 jam setelah gempa</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-sm text-gray-500">
+                                        Jarak dari epicenter ke lokasi 100 Km
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Jarak Menengah</h2>
+                        </div>
+                        <div class="px-6 pt-6 pb-8">
+                            <h3 class="text-xs font-medium tracking-wide text-gray-900 uppercase">Ciri-cirinya</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li class="flex space-x-3">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-sm text-gray-500">Terjadi antara 1 – 3 jam</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-sm text-gray-500">
+                                        Jarak dari epicenter ke lokasi 100 – 1000
+                                        Km
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Jarak Jauh</h2>
+                        </div>
+                        <div class="px-6 pt-6 pb-8">
+                            <h3 class="text-xs font-medium tracking-wide text-gray-900 uppercase">Ciri-cirinya</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li class="flex space-x-3">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-sm text-gray-500">Terjadi > 3 jam</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="text-sm text-gray-500">Jarak dari epicenter ke lokasi > 1000 Km</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-12 mx-auto border-t-2" id="letak">
+                <h2 class="text-3xl font-bold text-center text-black">Letak Terjadi Tsunami</h2>
+                <div
+                    class="mt-4 space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Pergerakan Lempeng Tektonik</h2>
+                        </div>
+                        <div class="px-2 pt-2 pb-4">
+                            <img src="img/letak1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Aktivitas Vulkanik</h2>
+                        </div>
+                        <div class="px-2 pt-2 pb-4">
+                            <img src="img/letak3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Turunnya Muka Tanah</h2>
+                        </div>
+                        <div class="px-2 pt-2 pb-4">
+                            <img src="img/letak2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Tingkat Curah Hujan</h2>
+                        </div>
+                        <div class="px-2 pt-2 pb-4">
+                            <img src="img/letak4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="mt-4 text-lg font-semibold text-gray-500">Convergent Plate</h3>
+                    <p>
+                        Tsunami sering terjadi di tempat yang kedalamannya dangkal di convergen pada oceanic – oceanic
+                        convergence maupun oceanic continent convergence
+                    </p>
+                    <div class="flex flex-wrap justify-center my-4 gap-x-8">
+                        <img src="img/image4.png" class="border border-gray-200 rounded-lg shadow-sm h-60">
+                        <img src="img/image3.png" class="border border-gray-200 rounded-lg shadow-sm h-60">
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold text-gray-500">Subduction Zone</h3>
+                    <p>
+                        Pengangkatan pada dasar laut yang sangat cepat akan menghasilkan tonjolan air laut dan akan
+                        melebar menjadi gelombang tsunami dikarenakan tabrakan subduksi
+                    </p>
+                    <div class="flex flex-wrap justify-center my-4 gap-x-8">
+                        <img src="img/image5.png" class="border border-gray-200 rounded-lg shadow-sm">
+                    </div>
+                </div>
+            </div>
+            <div id="proses" class="container flex flex-col items-center justify-center py-12 mx-auto border-t-2">
+                <h2 class="mb-4 text-3xl font-bold text-center">Proses Terjadi Tsunami</h2>
+                <div class="flex flex-col gap-8 md:flex-row">
+                    <div class="flex justify-center p-4 border border-gray-200 rounded-lg shadow-sm">
+                        <img src="img/image6.jpeg" class="w-full h-auto">
+                    </div>
+                    <div class="flow-root p-8 border">
+                        <ul role="list" class="-mb-8">
+                            <li>
+                                <div class="relative pb-8">
+                                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
+                                        aria-hidden="true"></span>
+                                    <div class="relative flex space-x-3">
+                                        <div>
+                                            <span
+                                                class="flex items-center justify-center w-8 h-8 bg-blue-500 rounded-full ring-8 ring-white">1</span>
+                                        </div>
+                                        <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
+                                            <div>
+                                                <p class="text-sm text-gray-500">
+                                                    Gempa
+                                                    <a href="#" class="font-medium text-gray-900"> di bawah laut</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="gelombang" class="relative pb-8">
+                                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
+                                        aria-hidden="true"></span>
+                                    <div class="relative flex space-x-3">
+                                        <div>
+                                            <span
+                                                class="flex items-center justify-center w-8 h-8 bg-blue-400 rounded-full ring-8 ring-white">2</span>
+                                        </div>
+                                        <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
+                                            <div>
+                                                <p class="text-sm text-gray-500">
+                                                    Gelombang gempa terangkat air
+                                                    <a href="#" class="font-medium text-gray-900">ke atas</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="relative pb-8">
+                                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
+                                        aria-hidden="true"></span>
+                                    <div class="relative flex space-x-3">
+                                        <div>
+                                            <span
+                                                class="flex items-center justify-center w-8 h-8 bg-blue-300 rounded-full ring-8 ring-white">3</span>
+                                        </div>
+                                        <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
+                                            <div>
+                                                <p class="text-sm text-gray-500">
+                                                    Air laut tertarik
+                                                    <a href="#" class="font-medium text-gray-900">dari daratan</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="relative pb-8">
+                                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
+                                        aria-hidden="true"></span>
+                                    <div class="relative flex space-x-3">
+                                        <div>
+                                            <span
+                                                class="flex items-center justify-center w-8 h-8 bg-green-400 rounded-full ring-8 ring-white">4</span>
+                                        </div>
+                                        <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
+                                            <div>
+                                                <p class="text-sm text-gray-500">
+                                                    Gelombang menjalar
+                                                    <a href="#" class="font-medium text-gray-900">ke daratan</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="relative pb-8">
+                                    <div class="relative flex space-x-3">
+                                        <div>
+                                            <span
+                                                class="flex items-center justify-center w-8 h-8 bg-red-500 rounded-full ring-8 ring-white">5</span>
+                                        </div>
+                                        <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
+                                            <div>
+                                                <p class="text-sm text-gray-500">
+                                                    Gelombang semakin besar saat
+                                                    <a href="#" class="font-medium text-gray-900">kedalam dangkal</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-12 mx-auto prose prose-lg text-gray-500 border-t-2 prose-indigo">
+                <h2 class="mb-4 text-3xl font-bold text-center">Gelombang yang dihasilkan Tsunami</h2>
+                <ul role="list" class="grid grid-cols-1 list-decimal gap-x-8 md:grid-cols-2">
+                    <li class="border border-gray-400 rounded shadow-md md:h-32">
+                        Gelombang Tsunami merupakan gelombang
+                        ombak laut raksasa yang terjadi pasca gempa bumi, gempa laut, gunung berapi meletus, atau
+                        hantaman meteor di laut tanah longsor di dasar laut.
+                    </li>
+                    <li class="border border-gray-400 rounded shadow-md md:h-32">
+                        Gerakan vertikal pada kerak bumi,
+                        menyebabkan dasar laut atau turun secara tiba – tiba, sehingga kesetimbangan air laut terganggu.
+                        Hal ini mengakibatkan terjadinya aliran energi air laut yang ketika sampai di pantai menjadi
+                        gelombang besar yang mengakibatkan terjadinya tsunami.
+                    </li>
+                    <li class="border border-gray-400 rounded shadow-md md:h-32">
+                        Gelombang Tsunami dapat menghasilkan
+                        local tsunami yang hanya terjadi pada daerah setempat dan distant tsunami yang dapat menyebar
+                        pada wilayah yang luas dan jauh dari sumber asalnya
+                    </li>
+                    <li class="border border-gray-400 rounded shadow-md md:h-32">
+                        Kecepatan tsunami tergantung dari kedalaman air. Di laut dalam dan terbuka, kecepatannya
+                        mencapai 800-1000 km/ jam. Ketinggian tsunami di lautan dalam hanya mencapai 30-60 cm, dengan
+                        panjang gelombang mencapai ratusan kilometer.
+                    </li>
+                    <li class="border border-gray-400 rounded shadow-md md:h-32">
+                        Gelombang tsunami mengalami pergerakan diseluruh bagian partikel air, mulai dari permukaan
+                        sampai bagian dalam samudra.
+                    </li>
+                    <li class="border border-gray-400 rounded shadow-md md:h-32">
+                        Saat tsunami memasuki perairan yang lebih dangkal, ketinggian gelombangnya meningkat dan
+                        kecepatannya menurun drastis, meski demikian energinya masih sangat kuat.
+                    </li>
+                </ul>
+            </div>
+            <div class="container py-12 mx-auto border-t-2" id="bahaya">
+                <h2 class="mb-4 text-3xl font-bold text-center">Apakah tsunami berbahaya?</h2>
+                <div class="flex items-center justify-center my-8 space-x-4">
+                    <svg class="flex-shrink-0 w-5 h-5 text-red-500" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="text-2xl">
+                        <strong>Ya,</strong>
+                        tsunami berbahaya karena dapat dapat memakan korban jiwa,
+                        menghancurkan bangunan, dan menyebabkan kerusakan lainnya.
+                    </p>
+                </div>
+                <p class="mt-4 text-xl text-center">
+                    Bahkan Ketika banjir tsunami mulai surut, arus balik air ke laut
+                    juga dapat menimbukan kerusakan besar. Air dapat mengalir dengan cepat dan bergejolak, menyebabkan
+                    erosi dan merusak fondasi bangunan. Air dapat bergerak bolak balik hingga beberapa hari.
+                </p>
+            </div>
+            <div class="container py-12 mx-auto border-t-2" id="minimalisir">
+                <h2 class="mb-4 text-3xl font-bold text-center">Cara meminimalisir Tsunami</h2>
+                <div
+                    class="mt-4 space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Prabencana</h2>
+                        </div>
+                        <div class="px-6 pt-6 pb-8">
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Mengenali tanda-tanda tsunami, seperti intesitas
+                                        gempa
+                                    </span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">Mengetahui tingat kerawanan tempat
+                                        tinggal</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">Memahami sistem peringatan dini</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">Mengetahui rute evakuasi</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">Memiliki rencana antisipasi bencana</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Memantau informasi dari berbagai media setelah
+                                        terjadinya gempa bumi
+                                    </span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">Menyiapkan tas siaga bencana (TSB)</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Menanam berbagai pohon pesisir seperti pohon
+                                        kelapa untuk menahan ombak
+                                    </span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-red-500 text-md fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Menanam tumbuhan bakau, untuk menjaga kestabilan
+                                        garis pantai dan mengurangi kekuatan gelombang air laut.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Saat Bencana</h2>
+                        </div>
+                        <div class="px-6 pt-6 pb-8">
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li class="flex space-x-3">
+                                    <i class="text-yellow-500 fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Waspada akan adanya gempa susulan dan menunggu
+                                        informasi dari pihak berwajib
+                                    </span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-yellow-500 fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Jika berada di dalam rumah, tetap tenang dan
+                                        segera melakukan evakuasi ke tempat yang lebih tinggi dan aman
+                                    </span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-yellow-500 fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Jika sudah di daerah tinggi, tunggu disana
+                                        sampai pihak berwenang menyatakan aman
+                                    </span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-yellow-500 fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Ketika evakuasi, utamakan berjalan kaki jangan
+                                        menggunakan kendaraan.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 divide-y divide-gray-200 rounded-lg shadow-sm">
+                        <div class="p-6">
+                            <h2 class="text-lg font-medium leading-6 text-gray-900">Pasca Bencana</h2>
+                        </div>
+                        <div class="px-6 pt-6 pb-8">
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li class="flex space-x-3">
+                                    <i class="text-green-500 fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">Prioritaskan keselamatan diri, bukan harta
+                                        benda</span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-green-500 fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Jika pihak berwenang sudah menyatakan aman, anda
+                                        boleh kembali ke rumah
+                                    </span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-green-500 fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Hindari air menggenang karena ada ancaman
+                                        tersengat aliran listrik atau risiko terperosok
+                                    </span>
+                                </li>
+                                <li class="flex space-x-3">
+                                    <i class="text-green-500 fas fa-circle"></i>
+                                    <span class="text-sm text-gray-500">
+                                        Buanglah makanan yang terkontaminasi air
+                                        genangan
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-12 mx-auto border-t-2" id="lembaga">
+                <h2 class="mb-4 text-3xl font-bold text-center">Lembaga yang Berperan</h2>
+                <div class="grid gap-4 md:grid-cols-4">
+                    <div class="p-4 border shadow-lg rounded-xl">
+                        <h3 class="text-lg font-bold text-center">Badan Nasional Penanggulangan Bencana (BNPB)</h3>
+                    </div>
+                    <div class="p-4 border shadow-lg rounded-xl">
+                        <h3 class="text-lg font-bold text-center">Badan Nasional Pencarian dan Pertolongan (BASARNAS)
+                        </h3>
+                    </div>
+                    <div class="p-4 border shadow-lg rounded-xl">
+                        <h3 class="text-lg font-bold text-center">Palang Merah Indonesia (PMI)</h3>
+                    </div>
+                    <div class="p-4 border shadow-lg rounded-xl">
+                        <h3 class="text-lg font-bold text-center">
+                            Pusat Vulkanologi dan Mitigasi Bencana Geologi
+                            (PVMBG)
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-12 mx-auto prose prose-lg text-gray-500 border-t-2 prose-indigo">
+                <h2 class="mb-4 text-3xl font-bold text-center" id="referensi">Referensi</h2>
+                <ul>
+                    <li>
+                        Anonim. (n.d). Katalog Tsunami Indonesia tahun 416 - 2018 . Diakses pada 9 Desember 2021,
+                        Diambil dari https://cdn.bmkg.go.id/Web/Katalog-Tsunami-Indonesia-pertahun-416-2018.pdf
+                    </li>
+                    <li>
+                        Anonim. (n.d). Database Gempa Bumi. Diakses pada 8 Desember 2021, Diambil dari
+                        http://repogempa.bmkg.go.id/repo_new/
+                    </li>
+                    <li>
+                        KERPEN, N.B., KONGKO, W., KRAMER, K.D.D., GOSEBERG, N., and SCHLURMANN, T. (2011). International
+                        post-tsunami survey related to the October 25th, 2010 Mentawai tsunami. GFZ German Research
+                        Centre for Geoscience, Report –Nr. 716, 31 pp.
+                    </li>
+                    <li>
+                        Rudyanto, Rusli, & Rudyanto, Ariska. (2012). PEMODELAN TSUNAMI SEBAGAI BAHAN MITIGASI BENCANA
+                        STUDI KASUS SUMENEP DAN KEPULAUANNYA. JURNAL NEUTRINO. 10.18860/neu.v0i0.1639.
+                    </li>
+                    <li>
+                        Septyandy, M. R. (2021). PPT Pembelajaran Geologi Kebencanaan Week 5. Depok: Universitas
+                        Indonesia
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="anggota" class="py-4 bg-gray-700">
+    <div class="container flex flex-col items-center justify-center mx-auto">
+        <h3 class="mb-8 text-3xl font-bold text-white">Anggota Kelompok</h3>
+        <div class="">
+            <div class="grid w-full grid-cols-2">
+                <div>
+                    <h3 class="text-2xl font-semibold tracking-wider text-center text-gray-200 uppercase">Nama</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li class="text-xl text-center text-gray-300">Achmad Faza</li>
+                        <li class="text-xl text-center text-gray-300">Dean Saptadi</li>
+                        <li class="text-xl text-center text-gray-300">Nadya Faudilla</li>
+                        <li class="text-xl text-center text-gray-300">Pasya Damadyakta</li>
+                    </ul>
+                </div>
+                <div class="pl-4 mt-0 md:pl-14">
+                    <h3 class="text-2xl font-semibold tracking-wider text-gray-200 uppercase md:text-center">NPM</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li class="text-xl text-gray-300">1806198755</li>
+                        <li class="text-xl text-gray-300">1806198295</li>
+                        <li class="text-xl text-gray-300">1806198471</li>
+                        <li class="text-xl text-gray-300">1806198484</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+<!-- GMAP API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIzWunF7ca71RlCiqU462m0-4NVH_oLlc"></script>
+<!-- Data Lokasi -->
+<script src="data.js"></script>
+<!-- GMAP JS -->
+<script src="main.js"></script>
+</body>
+
+</html>
